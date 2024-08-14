@@ -5,6 +5,8 @@ import Filter from "./Filter";
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  console.log({items})
+
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
   }
